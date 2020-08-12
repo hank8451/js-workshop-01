@@ -28,13 +28,15 @@ document.addEventListener('DOMContentLoaded',function(){
   // })
 
   // inner.addEventListener('click', function(e){
+      // 停止繼續bubbling
   //   e.stopPropagation();
   //   console.log('inner')
   // })
 
-  // // preventDefault
-  // link.addEventListener('click', function(e){
-  //   e.preventDefault();
-  //   console.log('link');
-  // })
+  // preventDefault
+  link.addEventListener('click', function(e){
+    // 忽略原來的設定
+    e.preventDefault();
+    console.log('link');
+  })
 })
